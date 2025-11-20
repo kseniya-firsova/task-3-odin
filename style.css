@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto auto auto;
+    gap: 15px;
+    padding: 15px;
+}
+.gallery-item {
+    border-radius: 8px;
+    overflow: hidden;
+}
+.gallery-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+.caption {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    color: #555;
+    border: 2px solid #555;
+    border-radius: 8px;
+    background-color: antiquewhite;
+    padding: 8px 0;
+}
